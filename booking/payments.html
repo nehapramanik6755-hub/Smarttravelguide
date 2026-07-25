@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking | TravelIndia</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="../css/bookings.css">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/places.css">
+      <link rel="stylesheet" href="../css/profile.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <link rel="stylesheet" href="../css/payment.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+                    <img src="../Images/image logo.png" alt="Logo">
+                <h2> Smart Travel Guide</h2>
+            </div>
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+                <li><a href="../places/places.html">Explore </a></li>
+                <li><a href="../hotels/hotels.html">Hotels</a></li>
+                <li><a href="../guides/guides.html">Guides</a></li>
+                <li><a href="../vehicles/vehicles.html">Vehicles</a></li>
+                 <li><a href="../booking/booking.html" class="active">Booking</a></li>
+                
+                <li><a href="../contact.html">Contact</a></li>
+
+
+        </ul>
+
+    </nav>
+
+
+
+<section class="payment-container">
+
+    <div class="payment-box">
+
+        <h2>Complete Payment</h2>
+
+        <div class="payment-summary">
+
+            <p>
+                <strong>Service:</strong>
+                <span id="serviceName">-</span>
+            </p>
+
+            <p>
+                <strong>City:</strong>
+                <span id="serviceState">-</span>
+            </p>
+
+           
+
+             <p>
+                <strong>Price:</strong>
+                <span id="servicePrice">₹0</span>
+            </p>
+
+            <hr>
+
+        
+
+            
+
+        </div>
+
+
+        
+  
+
+
+
+
+ <!-- Payment Section -->
+            <div class="payment-box">
+
+                <h2>Choose Payment Method</h2>
+
+                <div class="payment-option">
+
+                    <label>
+                        <input type="radio" name="paymentMethod" value="upi">
+                        📱 UPI
+                    </label>
+
+                </div>
+
+                <div class="payment-option">
+
+                    <label>
+                        <input type="radio" name="paymentMethod" value="card">
+                        💳 Credit / Debit Card
+                    </label>
+
+                </div>
+
+                <div class="payment-option">
+
+                    <label>
+                        <input type="radio" name="paymentMethod" value="cash">
+                        💵 Cash Payment
+                    </label>
+
+                </div>
+
+                <!-- UPI Section -->
+                <div id="upiSection" class="payment-details">
+
+                    <h3>Pay using UPI</h3>
+
+                    <button type="button" class="upi-btn">
+                        Google Pay
+                    </button>
+
+                    <button type="button" class="upi-btn">
+                        PhonePe
+                    </button>
+
+                    <button type="button" class="upi-btn">
+                        Paytm
+                    </button>
+
+                    <input type="text"
+                        id="upiId"
+                        placeholder="Enter UPI ID">
+
+                </div>
+
+                <!-- Card Section -->
+                <div id="cardSection" class="payment-details">
+
+                    <h3>Card Details</h3>
+
+                    <input type="text"
+                        id="cardName"
+                        placeholder="Card Holder Name">
+
+                    <input type="text"
+                        id="cardNumber"
+                        placeholder="Card Number">
+
+                    <div class="card-row">
+
+                        <input type="text"
+                            id="expiry"
+                            placeholder="MM/YY">
+
+                        <input type="password"
+                            id="cvv"
+                            placeholder="CVV">
+
+                    </div>
+
+                </div>
+
+                <!-- Cash Section -->
+                <div id="cashSection" class="payment-details">
+
+                    <p>
+                        You can pay at the time of service.
+                    </p>
+
+                </div>
+
+                <button id="payNowBtn">
+                    Pay Now
+                </button>
+
+                <p id="paymentMessage"></p>
+
+            </div>
+
+        </div>
+
+    
+
+</section>
+    
+
+
+
+    <script src="../js/app.js"></script>
+    <script src="../js/login.js"></script>
+
+    <script src="../js/data.js"></script>
+     <script src="../js/bookings.js"></script>
+       <script src="../js/payments.js"></script>
+
+</body>
+
+</html>

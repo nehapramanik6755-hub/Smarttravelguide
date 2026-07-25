@@ -1,0 +1,288 @@
+
+
+
+
+/* ==========================
+   PLACE HERO
+========================== */
+
+.place-hero{
+    width:100%;
+    height:70vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.place-hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:zoomHero 15s ease-in-out infinite alternate;
+}
+
+.place-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.15));
+}
+
+@keyframes zoomHero{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.12);
+    }
+}
+
+/* ==========================
+   DETAILS CARD
+========================== */
+
+.place-details{
+    width:88%;
+    max-width:1150px;
+    margin:-90px auto 60px;
+    position:relative;
+    z-index:10;
+
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+    padding:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    animation:fadeUp 1s ease;
+}
+
+.place-details h1{
+    text-align:center;
+    font-size:48px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.place-details h3{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:30px;
+    font-weight:500;
+}
+
+.place-details h2{
+    color:#2563eb;
+    font-size:30px;
+    margin:35px 0 15px;
+    padding-left:15px;
+    border-left:6px solid #06b6d4;
+}
+
+.place-details p{
+    color:#555;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.place-details hr{
+    border:none;
+    height:1px;
+    background:#e5e7eb;
+    margin:35px 0;
+}
+
+/* ==========================
+   LIST
+========================== */
+
+.place-details ul{
+    list-style:none;
+    padding:0;
+}
+
+.place-details li{
+    background:#f8fafc;
+    margin:15px 0;
+    padding:18px 20px;
+    border-radius:15px;
+
+    transition:.4s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.place-details li:hover{
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:#fff;
+    transform:translateX(10px);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(37,99,235,.45);
+}
+
+/* ==========================
+   MAP
+========================== */
+
+.place-details iframe{
+    width:100%;
+    height:420px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    margin-top:20px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.place-hero{
+height:40vh;
+}
+
+.place-details{
+width:94%;
+margin-top:-50px;
+padding:25px;
+}
+
+.place-details h1{
+font-size:34px;
+}
+
+.place-details h2{
+font-size:24px;
+}
+
+.place-details p,
+.place-details li{
+font-size:16px;
+}
+
+.place-details iframe{
+height:280px;
+}
+
+.btn{
+display:block;
+text-align:center;
+width:100%;
+}
+
+}
+
+
+.place-info-bar{
+    width:90%;
+    max-width:1100px;
+    margin:-45px auto 40px;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:25px;
+    position:relative;
+    z-index:20;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    animation:fadeUp 1s ease;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    transition:.4s;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+}
+
+.info-box span{
+    width:65px;
+    height:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:32px;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:#fff;
+}
+
+.info-box h4{
+    color:#1e3a8a;
+    margin-bottom:5px;
+}
+
+.info-box p{
+    color:#666;
+    font-size:15px;
+}
+
+@media(max-width:768px){
+    .place-info-bar{
+        grid-template-columns:1fr 1fr;
+        padding:20px;
+        margin-top:-30px;
+    }
+
+    .info-box span{
+        width:55px;
+        height:55px;
+        font-size:28px;
+    }
+}

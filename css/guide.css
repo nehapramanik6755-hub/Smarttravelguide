@@ -1,0 +1,379 @@
+/*=========================
+   GUIDE BANNER
+=========================*/
+
+.page-banner{
+    width:100%;
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../Images/banner.png");
+
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+
+    animation:zoomBg 15s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg{
+    from{background-size:100%;}
+    to{background-size:110%;}
+}
+
+.page-banner h1{
+    font-size:60px;
+    margin-bottom:15px;
+    /* animation:slideDown 1s ease; */
+     opacity: 1;
+}
+
+.page-banner p{
+    font-size:22px;
+    margin-bottom:35px;
+    /* animation:fadeUp 1.2s ease; */
+     opacity: 1;
+}
+
+/*=========================
+   SEARCH BOX
+=========================*/
+
+.guide-search{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+
+    padding:18px;
+    border-radius:60px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.guide-search input,
+.guide-search select{
+
+    padding:15px 18px;
+    border:none;
+    outline:none;
+
+    border-radius:40px;
+
+    min-width:220px;
+
+    font-size:16px;
+}
+
+.guide-search button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.guide-search button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.45);
+}
+
+/*=========================
+   GUIDE CARDS
+=========================*/
+
+.guide-container{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+}
+
+.guide-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+    transition:.5s;
+
+    position:relative;
+
+    animation:fadeUp .8s ease;
+}
+
+.guide-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.2);
+}
+
+.guide-card::before{
+
+    content:"Verified";
+
+    position:absolute;
+
+    top:15px;
+    right:15px;
+
+    background:#10b981;
+
+    color:#fff;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.guide-card img{
+
+    width:100%;
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.guide-card:hover img{
+
+    transform:scale(1.08);
+}
+
+.guide-card h3{
+
+    font-size:28px;
+
+    color:#1e3a8a;
+
+    margin:18px;
+}
+
+.guide-card p{
+
+    margin:8px 18px;
+
+    color:#555;
+
+    font-size:16px;
+}
+
+/*=========================
+   BUTTON
+=========================*/
+
+.guide-card .btn{
+
+    display:inline-block;
+
+    margin:18px;
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.guide-card .btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.4);
+}
+
+/*=========================
+   BENEFITS
+=========================*/
+
+.guide-benefits{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:60px auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.1);
+
+    text-align:center;
+}
+
+.guide-benefits h2{
+
+    font-size:36px;
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+}
+
+.guide-benefits ul{
+
+    list-style:none;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    padding:0;
+}
+
+.guide-benefits li{
+
+    background:#f8fafc;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.guide-benefits li:hover{
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:#fff;
+
+    transform:translateY(-8px);
+}
+
+/*=========================
+   ANIMATION
+=========================*/
+
+@keyframes slideDown{
+
+from{
+opacity:0;
+transform:translateY(-50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/*=========================
+   MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.page-banner{
+height:70vh;
+padding:20px;
+}
+
+.page-banner h1{
+font-size:38px;
+}
+
+.page-banner p{
+font-size:18px;
+}
+
+.guide-search{
+flex-direction:column;
+border-radius:20px;
+width:92%;
+}
+
+.guide-search input,
+.guide-search select,
+.guide-search button{
+width:100%;
+}
+
+.guide-card .btn{
+display:block;
+text-align:center;
+margin:15px;
+}
+
+.guide-benefits{
+padding:25px;
+}
+
+.guide-benefits h2{
+font-size:28px;
+}
+
+}

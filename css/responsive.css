@@ -1,0 +1,210 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* ---------- Large Tablets ---------- */
+
+@media (max-width: 1024px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .booking-section,
+    .profile-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+        padding:15px;
+    }
+
+    .logo{
+        margin-bottom:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        gap:10px;
+    }
+
+    .nav-links li{
+        width:100%;
+    }
+
+    .nav-links li a{
+        display:block;
+        padding:12px;
+    }
+
+    /* Hero */
+
+    .hero{
+        height:70vh;
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    /* Search */
+
+    .search-section{
+        flex-direction:column;
+    }
+
+    .search-section input,
+    .search-section select,
+    .search-section button{
+        width:100%;
+    }
+
+    /* Cards */
+
+    .hotel-container,
+    .guide-container,
+    .vehicle-container,
+    .place-container,
+    .destination-container,
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    /* Forms */
+
+    input,
+    select,
+    textarea,
+    button{
+        width:100%;
+    }
+
+    /* Booking */
+
+    .booking-section{
+        grid-template-columns:1fr;
+    }
+
+    /* Profile */
+
+    .profile-container{
+        grid-template-columns:1fr;
+    }
+
+    .profile-info{
+        grid-template-columns:1fr;
+    }
+
+    /* Footer */
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:480px){
+
+    .hero{
+        height:60vh;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .page-banner h1{
+        font-size:30px;
+    }
+
+    .page-banner p{
+        font-size:16px;
+    }
+
+    .btn,
+    button{
+        font-size:15px;
+        padding:12px 20px;
+    }
+
+    .hotel-card,
+    .guide-card,
+    .vehicle-card,
+    .place-card,
+    .booking-summary,
+    .booking-form{
+        margin:10px;
+    }
+
+    .profile-sidebar img{
+        width:100px;
+        height:100px;
+    }
+
+    .stat-card h3{
+        font-size:24px;
+    }
+
+    footer{
+        padding:20px 10px;
+    }
+
+}
+
+/* ---------- Extra Small Devices ---------- */
+
+@media (max-width:320px){
+
+    .hero-content h1{
+        font-size:24px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .page-banner h1{
+        font-size:24px;
+    }
+
+}

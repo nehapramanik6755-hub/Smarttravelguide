@@ -1,0 +1,381 @@
+
+
+/* ==========================
+   CONTACT BANNER
+========================== */
+
+.page-banner{
+    width:100%;
+    min-height:100vh;
+    padding:80px 20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../Images/banner.png");
+
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+
+    animation:zoomBg 15s ease-in-out infinite alternate;
+}
+
+@keyframes zoomBg{
+    from{background-size:100%;}
+    to{background-size:110%;}
+}
+
+.page-banner h1{
+    font-size:60px;
+    margin-bottom:15px;
+    /* animation:slideDown 1s ease; */
+    .contact-section h1 {
+    animation: titleReveal 1s ease-out forwards;
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}
+
+.page-banner p{
+    font-size:22px;
+    margin-bottom:40px;
+    max-width:700px;
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-form{
+
+    height: 600px;
+    width:100%;
+    max-width:500px;
+    margin-top: -44px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    animation:fadeUp 1s ease;
+}
+
+.contact-form h2{
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    height: 50px;
+    
+    padding:16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,.9);
+}
+
+.contact-form textarea{
+
+    resize:none;
+}
+
+.contact-form button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.contact-form button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.45);
+}
+
+#successMsg{
+
+    color:#90EE90;
+
+    font-weight:600;
+}
+
+
+
+
+
+
+
+/* ==========================
+   CONTACT INFO
+========================== */
+
+.contact-section{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:70px auto;
+}
+
+.contact-info{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.contact-info h2{
+
+    color:#2563eb;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    border-left:5px solid #06b6d4;
+
+    padding-left:15px;
+}
+
+.contact-info p{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+    color:#555;
+}
+
+/* ==========================
+   GOOGLE MAP
+========================== */
+
+.map-section{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:70px auto;
+
+    text-align:center;
+}
+
+.map-section h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+    font-size:34px;
+}
+
+.map-section iframe{
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   FAQ
+========================== */
+
+.faq-section{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:70px auto;
+}
+
+.faq-section h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+
+    font-size:34px;
+}
+
+.faq-section details{
+
+    background:#fff;
+
+    margin-bottom:18px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.faq-section details:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.15);
+}
+
+.faq-section summary{
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#1e3a8a;
+}
+
+.faq-section p{
+
+    margin-top:15px;
+
+    color:#555;
+
+    line-height:1.8;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes slideDown{
+
+from{
+opacity:0;
+transform:translateY(-50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.page-banner{
+padding:60px 15px;
+}
+
+.page-banner h1{
+font-size:38px;
+}
+
+.page-banner p{
+font-size:18px;
+}
+
+.contact-form{
+padding:25px;
+}
+
+.contact-form h2{
+font-size:26px;
+}
+
+.contact-info,
+.map-section,
+.faq-section{
+width:94%;
+}
+
+.contact-info h2,
+.map-section h2,
+.faq-section h2{
+font-size:28px;
+}
+
+}

@@ -1,0 +1,144 @@
+
+
+ .guide-profile{
+    width: 85%;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.guide-profile img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0d6efd;
+    margin-bottom: 20px;
+}
+
+.guide-profile h1{
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.guide-profile p{
+    font-size: 17px;
+    color: #555;
+    margin: 8px 0;
+}
+
+
+
+.guide-about,
+.guide-services,
+.guide-availability,
+.guide-booking{
+    width: 85%;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.guide-about h2,
+.guide-services h2,
+.guide-availability h2,
+.guide-booking h2{
+    color: #0d6efd;
+    font-size: 28px;
+    margin-bottom: 18px;
+    border-left: 5px solid #0d6efd;
+    padding-left: 12px;
+}
+
+.guide-about p,
+.guide-availability p{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+
+.guide-services ul{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 18px;
+}
+
+.guide-services li{
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 0 5px 12px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.guide-services li:hover{
+    background: #0d6efd;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 30px;
+    background: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover{
+    background: #084298;
+    transform: translateY(-3px);
+}
+
+
+
+@media(max-width:768px){
+
+.guide-profile,
+.guide-about,
+.guide-services,
+.guide-availability,
+.guide-booking{
+    width:92%;
+    padding:20px;
+}
+
+.guide-profile img{
+    width:140px;
+    height:140px;
+}
+
+.guide-profile h1{
+    font-size:30px;
+}
+
+.guide-services ul{
+    grid-template-columns:1fr;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+} 
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotels |  Smart Travel Guide</title>
+
+   <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="../css/hotel taj view.css">
+      <link rel="stylesheet" href="../css/booking.css">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/places.css">
+      <link rel="stylesheet" href="../css/profile.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/styl.css">
+        
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+                 <img src="../Images/image logo.png" alt="Logo">
+                <h2  class="logo-text"> Smart Travel Guide</h2>
+            </div>
+
+        <ul class="nav-links">
+
+             <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../places/places.html">Explore</a></li>
+            <li><a href="../hotels/hotels.html"  class="active">Hotels</a></li>
+            <li><a href="../guides/guides.html">Guides</a></li>
+            <li><a href="../vehicles/vehicles.html">Vehicles</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            
+
+        </ul>
+
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+
+        <h1>Find Your Perfect Hotel</h1>
+
+        <p>Choose from trusted hotels across India.</p>
+
+        <section class="hotel-search">
+
+    <input type="text" id="citySearch" placeholder="Search by City">
+
+    <input type="date" id="checkIn">
+
+    <input type="date" id="checkOut">
+
+    <select id="guests">
+        <option>Guests</option>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+    </select>
+
+    <button onclick="searchHotels()">Search</button>
+
+</section>
+
+<div id="hotelResults"></div>
+
+    </section>
+
+
+    <!-- Hotel Cards -->
+
+    <section class="hotel-container" id="hotelContainer">
+
+        <div class="hotel-card">
+
+    <img src="../Images/hotel taj view.png" alt="Hotel Taj View">
+
+    <h3>Hotel Taj View</h3>
+
+    <p>📍 Agra</p>
+
+    <p>💰 ₹2,000 / Night</p>
+
+    <p>✔ Free WiFi | Breakfast | Pool</p>
+
+    <a href="../hotels/hotel-taj-view.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=tajview" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/radisson.png" alt="Radisson Agra">
+
+    <h3>Radisson Agra</h3>
+
+    <p>📍 Agra</p>
+
+    <p>💰 ₹7,200 / Night</p>
+
+    <p>✔ Free WiFi | Breakfast | Gym</p>
+
+    <a href="../hotels/radission-hotel.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=radissonagra" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/ITC Mughal.png" alt="ITC Mughal">
+  
+
+    <h3>ITC Mughal</h3>
+
+    <p>📍 Agra</p>
+
+    <p>💰 ₹9,800 / Night</p>
+
+    <p>✔ Pool | Spa | Breakfast</p>
+
+    <a href="../hotels/ITC-mughal.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=itcmughal" class="btn">Book Now</a>
+</div>
+
+  <div class="hotel-card">
+    <img src="../Images/taj fort aguada.png" alt="Taj Fort Aguada">
+
+    <h3>Taj Fort Aguada</h3>
+
+    <p>📍 Goa</p>
+
+    <p>💰 ₹12,000 / Night</p>
+
+    <p>✔ Beach View | Pool | Free WiFi</p>
+
+    <a href="../hotels/taj-fort-aguada.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=tajfortaguada" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/novotel.png" alt="Novotel Goa">
+
+    <h3>Novotel Goa</h3>
+
+    <p>📍 Goa</p>
+
+    <p>💰 ₹7,600 / Night</p>
+
+    <p>✔ Breakfast | Pool | Free WiFi</p>
+
+    <a href="../hotels/novotel goa.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=novotelgoa" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/grand hyatt.png" alt="Grand Hyatt Goa">
+
+    <h3>Grand Hyatt Goa</h3>
+
+    <p>📍 Goa</p>
+
+    <p>💰 ₹14,500 / Night</p>
+
+    <p>✔ Luxury Spa | Beach | Pool</p>
+
+    <a href="../hotels/grand-hyatt.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=grandhyattgoa" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/rambagh.png" alt="Rambagh Palace">
+
+    <h3>Rambagh Palace</h3>
+
+    <p>📍 Jaipur</p>
+
+    <p>💰 ₹25,000 / Night</p>
+
+    <p>✔ Luxury Palace | Spa | Swimming Pool</p>
+
+    <a href="../hotels/rambagh-palace.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=rambaghpalace" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/itc rajputana.png" alt="ITC Rajputana">
+
+    <h3>ITC Rajputana</h3>
+
+    <p>📍 Jaipur</p>
+
+    <p>💰 ₹8,500 / Night</p>
+
+    <p>✔ Free WiFi | Breakfast | Swimming Pool</p>
+
+    <a href="../hotels/itc-rajputana.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=itcrajputana" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/trident.png" alt="Trident Jaipur">
+
+    <h3>Trident Jaipur</h3>
+
+    <p>📍 Jaipur</p>
+
+    <p>💰 ₹7,000 / Night</p>
+
+    <p>✔ Lake View | Free WiFi | Breakfast</p>
+
+    <a href="../hotels/trident-jaipur.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=tridentjaipur" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/the leela kovalam.png" alt="The Leela Kovalam">
+
+    <h3>The Leela Kovalam</h3>
+
+    <p>📍 Kerala</p>
+
+    <p>💰 ₹15,000 / Night</p>
+
+    <p>✔ Beach View | Spa | Infinity Pool</p>
+
+    <a href="../hotels/the-leela-kovalam.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=theleelakovalam" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/kumarakom lake resort.png" alt="Kumarakom Lake Resort">
+
+    <h3>Kumarakom Lake Resort</h3>
+
+    <p>📍 Kerala</p>
+
+    <p>💰 ₹13,500 / Night</p>
+
+    <p>✔ Lake View | Free WiFi | Breakfast</p>
+
+    <a href="../hotels/kumarakom-lake-resort.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=kumarakomlakeresort" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/taj bekal resort.png" alt="Taj Bekal Resort">
+
+    <h3>Taj Bekal Resort</h3>
+
+    <p>📍 Kerala</p>
+
+    <p>💰 ₹12,500 / Night</p>
+
+    <p>✔ Beach View | Spa | Swimming Pool</p>
+
+    <a href="../hotels/taj-bekal-resort.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=tajbekalresort" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/himalayan.png" alt="The Himalayan">
+
+    <h3>The Himalayan</h3>
+
+    <p>📍 Manali</p>
+
+    <p>💰 ₹11,000 / Night</p>
+
+    <p>✔ Mountain View | Free WiFi | Breakfast</p>
+
+    <a href="../hotels/the-himalayan.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=thehimalayan" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/snow valley.png" alt="Snow Valley Resort">
+
+    <h3>Snow Valley Resort</h3>
+
+    <p>📍 Manali</p>
+
+    <p>💰 ₹6,500 / Night</p>
+
+    <p>✔ Mountain View | Free WiFi | Restaurant</p>
+
+    <a href="../hotels/snow valley resort.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=snowvalleyresort" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/apple country resort.png" alt="Apple Country Resort">
+
+    <h3>Apple Country Resort</h3>
+
+    <p>📍 Manali</p>
+
+    <p>💰 ₹7,000 / Night</p>
+
+    <p>✔ Valley View | Spa | Breakfast</p>
+
+    <a href="../hotels/apple country resort.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=applecountryresort" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/brijrama place.png" alt="BrijRama Palace">
+
+    <h3>BrijRama Palace</h3>
+
+    <p>📍 Varanasi</p>
+
+    <p>💰 ₹13,000 / Night</p>
+
+    <p>✔ Ganga View | Free WiFi | Breakfast</p>
+
+    <a href="../hotels/brijrama palaces.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=brijramapalace" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/hotel surya.png" alt="Hotel Surya">
+
+    <h3>Hotel Surya</h3>
+
+    <p>📍 Varanasi</p>
+
+    <p>💰 ₹5,000 / Night</p>
+
+    <p>✔ Swimming Pool | Free WiFi | Breakfast</p>
+
+    <a href="../hotels/hotel surya.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=hotelsurya" class="btn">Book Now</a>
+</div>
+
+<div class="hotel-card">
+    <img src="../Images/taj ganges.png" alt="Taj Ganges">
+
+    <h3>Taj Ganges</h3>
+
+    <p>📍 Varanasi</p>
+
+    <p>💰 ₹9,000 / Night</p>
+
+    <p>✔ Swimming Pool | Spa | Free WiFi</p>
+
+    <a href="../hotels/taj ganges.html" class="btn">View Details</a>
+
+    <a href="../booking/booking.html?type=hotel&item=tajganges" class="btn">Book Now</a>
+</div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 TravelIndia. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="../js/hotel.js"></script>
+     <script src="../js/hotel-search.js"></script>
+      <script src="../js/data.js"></script>
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    /* background:#0d6efd; */
+    background: white;
+    /* padding:15px 8%; */
+    padding: 15px 30px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+/* 
+.logo img{
+    width:50px;
+} */
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+.logo img:hover{
+    transform: rotate(360deg);
+}
+
+.logo-text {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 800;
+    /* font-family: "Poppins", sans-serif; */
+     background: linear-gradient(90deg, #0f172a, #2563eb, #38bdf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    animation: shine 3s linear infinite;
+    margin-right: 70px;
+}
+
+
+@keyframes shine{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    display: inline-block;
+   
+}
+
+.nav-links li a{
+    position: relative;
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links li a:hover{
+    color: #2563eb;
+}
+
+/* Animated Underline */
+.nav-links li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after{
+    width: 100%;
+}
+
+/* Active Menu */
+.nav-links li a.active{
+    color: #2563eb;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Login Button */
+.login-btn{
+    text-decoration: none;
+    padding: 10px 24px;
+    border: 2px solid #2563eb;
+    border-radius: 30px;
+    color: #2563eb;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover{
+    background: #2563eb;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+}
+
+/* Register Button */
+.register-btn{
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#2563eb,#38bdf8);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.4);
+    background: linear-gradient(135deg,#1d4ed8,#0ea5e9);
+}
+
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-wrap:wrap;
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        margin-top:15px;
+        background:#0d6efd;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links li a{
+        display:block;
+        padding:15px;
+    }
+
+}

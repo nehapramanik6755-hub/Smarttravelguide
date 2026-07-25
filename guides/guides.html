@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Local Guides |  Smart Travel Guide</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="../css/booking.css">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/places.css">
+      <link rel="stylesheet" href="../css/profile.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+       <link rel="stylesheet" href="../css/guide.css">
+        <link rel="stylesheet" href="../css/styl.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+                    <img src="../Images/image logo.png" alt="Logo">
+                <h2 class="logo-text"> Smart Travel Guide</h2>
+            </div>
+
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+                <li><a href="../places/places.html">Explore </a></li>
+                <li><a href="../hotels/hotels.html">Hotels</a></li>
+                <li><a href="../guides/guides.html"  class="active">Guides</a></li>
+                <li><a href="../vehicles/vehicles.html">Vehicles</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+
+
+        </ul>
+
+    </nav>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+
+        <h1>Find a Local Guide</h1>
+
+        <p>Book experienced and verified guides across India.</p>
+
+        <section class="guide-search">
+
+    <input type="text" id="city" placeholder="Search by City">
+
+    <select id="language">
+        <option value="">Select Language</option>
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Japanese">Japanese</option>
+    </select>
+
+    <button onclick="searchGuide()">Search</button>
+
+</section>
+
+    </section>
+
+    <!-- Guide Cards -->
+
+    <section class="guide-container">
+
+        <div class="guide-card" data-city="Agra" data-language="English Hindi">
+
+            <img src="../Images/agra rahul.png" alt="Guide">
+
+            <h3>Rahul Sharma</h3>
+
+            <p>📍Agra</p>
+
+            <p>🗣 English, Hindi</p>
+
+            <p>👨 Experience: 8 Years</p>
+
+            <p>💰 ₹1500 / Day</p>
+
+            <a href="../guides/guide-details-agra.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+        <div class="guide-card" data-city="Goa" data-language="English French">
+
+            <img src="../Images/Goa maria.png" alt="Guide">
+
+            <h3>Maria D'Souza</h3>
+
+            <p>📍 Goa</p>
+
+            <p>🗣 English, French</p>
+
+
+            <p>👨 Experience: 6 Years</p>
+
+            <p>💰 ₹1800 / Day</p>
+
+            <a href="../guides/guide-details-goa.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+        <div class="guide-card" data-city="Rajasthan" data-language="English Hindi">
+
+            <img src="../Images/rajasthan vikram.png" alt="Guide">
+
+            <h3>Vikram Singh</h3>
+
+            <p>📍 Rajasthan</p>
+
+            <p>🗣 English, Hindi</p>
+
+
+            <p>👨 Experience: 10 Years</p>
+
+            <p>💰 ₹1500 / Day</p>
+
+            <a href="../guides/guide-details-rajasthan.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+        <div class="guide-card" data-city="Kerala" data-language="English German">
+
+            <img src="../Images/kerala anil.png" alt="Guide">
+
+            <h3>Anil Nair</h3>
+
+            <p>📍Kerala</p>
+
+            <p>🗣 English, German</p>
+
+    
+
+            <p>👨 Experience: 10 Years</p>
+
+            <p>💰 ₹1700 / Day</p>
+
+            <a href="../guides/guide-details-kerala.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+        <div class="guide-card" data-city="Himachal Pradesh" data-language="English Hindi">
+
+            <img src="../Images/himachal aman.png" alt="Guide">
+
+            <h3>Aman Thakur</h3>
+
+            <p>📍 Himachal Pradesh</p>
+
+            <p>🗣 English, Hindi</p>
+
+
+            <p>👨 Experience: 10 Years</p>
+
+            <p>💰 ₹1700 / Day</p>
+
+            <a href="../guides/guide-details-himachal.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+        <div class="guide-card" data-city="Uttar Pradesh" data-language="English Japanese">
+
+            <img src="../Images/Uttar Pradesh priya.png" alt="Guide">
+
+            <h3>Priya Verma</h3>
+
+            <p>📍 Uttar Pradesh</p>
+
+            <p>🗣 English, Japanese</p>
+
+            <p>👨 Experience: 6 Years</p>
+
+            <p>💰 ₹1500 / Day</p>
+
+            <a href="../guides/guide-details-uttar.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- Why Choose -->
+
+    <section class="guide-benefits">
+
+        <h2>Why Book Our Guides?</h2>
+
+        <ul>
+
+            <li>✅ Government Verified Guides</li>
+
+            <li>✅ Multi-language Support</li>
+
+            <li>✅ Local Cultural Knowledge</li>
+
+            <li>✅ Safe & Trusted Service</li>
+
+            <li>✅ Affordable Pricing</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026  Smart Travel Guide. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+      <script src="../js/data.js"></script>
+       <script src="../js/bookings.js"></script>
+        <script src="../js/payments.js"></script>
+    <script src="../js/guide.js"></script>
+
+</body>
+
+</html>

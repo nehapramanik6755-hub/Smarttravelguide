@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Places | Smart Travel Guide</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/footer.css">
+      <link rel="stylesheet" href="../css/booking.css">
+      <link rel="stylesheet" href="../css/home.css">
+      <link rel="stylesheet" href="../css/places.css">
+      <link rel="stylesheet" href="../css/profile.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+       <link rel="stylesheet" href="../css/styl.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+           <div class="logo">
+                    <img src="../Images/image logo.png" alt="Logo">
+                <h2 class="logo-text"> Smart Travel Guide</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="place-details.html" class="active">Explore </a></li>
+                <li><a href="../hotels/hotels.html">Hotels</a></li>
+                <li><a href="../guides/guides.html">Guides</a></li>
+                <li><a href="../vehicles/vehicles.html">Vehicles</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="page-banner">
+
+        <h1>Explore Incredible India</h1>
+
+        <p>Discover famous tourist destinations across India.</p>
+
+
+    <section class="search-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by City, State or Tourist Place">
+
+    <button onclick="searchPlaces()">Search</button>
+
+</section>
+
+<div id="searchResults"></div>
+
+     </section>
+
+    <!-- Places -->
+
+    <section class="places-container">
+
+        <div class="place-card">
+
+            <img src="../Images/tajmahal.png" alt="Taj Mahal">
+
+            <h3>Taj Mahal</h3>
+
+            <p>Agra, Uttar Pradesh</p>
+
+
+            <a href="place-details.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+        <div class="place-card">
+
+            <img src="../Images/goa.png" alt="Goa">
+
+            <h3>Goa Beaches</h3>
+
+            <p>Goa</p>
+
+
+            <a href="goa details.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+        <div class="place-card">
+
+            <img src="../Images/jaipur.png" alt="Jaipur">
+
+            <h3>Jaipur</h3>
+
+            <p>Rajasthan</p>
+
+            <a href="jaipur.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+        <div class="place-card">
+
+            <img src="../Images/kerela.png" alt="Kerala">
+
+            <h3>Kerala Backwaters</h3>
+
+            <p>Kerala</p>
+
+
+            <a href="kerela.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+        <div class="place-card">
+
+            <img src="../Images/manali.png" alt="Manali">
+
+            <h3>Manali</h3>
+
+            <p>Himachal Pradesh</p>
+
+            <a href="manali.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+        <div class="place-card">
+
+            <img src="../Images/vanarasi.png" alt="Varanasi">
+
+            <h3>Varanasi</h3>
+
+            <p>Uttar Pradesh</p>
+
+
+            <a href="varanasi.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Smart Travel Guide. All Rights Reserved.
+        </p>
+
+    </footer>
+
+   
+
+
+    <script src="../js/search.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/places.js"></script>
+
+</body>
+
+</html>
