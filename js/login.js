@@ -1,39 +1,3 @@
-// login.js
-
-// function loginUser() {
-    
-//     let email = document.getElementById("email").value;
-//     let password = document.getElementById("password").value;
-
-//     // Simple validation
-//     if (email === "" || password === "") {
-//         alert("Please fill all fields");
-//         return false;
-//     }
-
-    
-//     let storedUser = JSON.parse(localStorage.getItem("user"));
-
-//     if (storedUser) {
-//         if (email === storedUser.email && password === storedUser.password) {
-            
-//             alert("Login Successful!");
-
-            
-//             localStorage.setItem("loggedInUser", email);
-
-            
-//             window.location.href = "index.html";
-//         } else {
-//             alert("Invalid email or password");
-//         }
-//     } else {
-//         alert("No user found. Please register first.");
-//     }
-
-//     return false;
-// }
-
 
 async function loginUser(event) {
 
@@ -53,7 +17,7 @@ async function loginUser(event) {
     try {
 
         const response = await fetch(
-            "http://localhost:9093/api/auth/login",
+            "http://smart-production-1fe6.up.railway.app/api/auth/login",
             {
                 method: "POST",
 

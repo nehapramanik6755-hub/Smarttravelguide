@@ -1,40 +1,4 @@
-// register.js
 
-// function registerUser() {
-    
-//     let name = document.getElementById("name").value;
-//     let email = document.getElementById("email").value;
-//     let password = document.getElementById("password").value;
-//     let confirmPassword = document.getElementById("confirmPassword").value;
-
-    
-//     if (name === "" || email === "" || password === "" || confirmPassword === "") {
-//         alert("Please fill all fields");
-//         return false;
-//     }
-
-//     if (password !== confirmPassword) {
-//         alert("Password and Confirm Password do not match");
-//         return false;
-//     }
-
-    
-//     let user = {
-//         name: name,
-//         email: email,
-//         password: password
-//     };
-
-    
-//     localStorage.setItem("user", JSON.stringify(user));
-
-//     alert("Registration Successful!");
-
-    
-//     window.location.href = "login.html";
-
-//     return false;
-// }
 
 function registerUser(event) {
 
@@ -78,7 +42,7 @@ function registerUser(event) {
         password: password
     };
 
-    fetch("http://localhost:9093/api/auth/register", {
+    fetch("http://smart-production-1fe6.up.railway.app/api/auth/register", {
         method: "POST",
 
         headers: {
