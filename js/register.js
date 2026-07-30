@@ -42,7 +42,7 @@ function registerUser(event) {
         password: password
     };
 
-    fetch("http://smart-production-1fe6.up.railway.app/api/auth/register", {
+    fetch("http://smart-travelguide-backend.up.railway.app/api/auth/register", {
         method: "POST",
 
         headers: {

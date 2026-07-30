@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", loadPlaces);
 
 async function loadPlaces() {
     try {
-        const response = await fetch("http://smart-production-1fe6.up.railway.app/api/places");
+        const response = await fetch("http://smart-travelguide-backend.up.railway.app/api/places");
         const places = await response.json();
 
         const container = document.getElementById("placesContainer");

@@ -189,7 +189,7 @@ bookingForm.addEventListener(
 
             const response =
                 await fetch(
-                    "http://smart-production-1fe6.up.railway.app/api/bookings",
+                    "http://smart-travelguide-backend.up.railway.app/api/bookings",
                     {
                         method: "POST",
 
