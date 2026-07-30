@@ -97,7 +97,7 @@ const bookingData =
            
 
             const response = await fetch(
-    "http://smart-travelguide-backend.up.railway.app/api/payments",
+    "https://smart-travelguide-backend.up.railway.app/api/payments",
     {
         method: "POST",
 
