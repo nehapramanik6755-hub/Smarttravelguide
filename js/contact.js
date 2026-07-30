@@ -15,7 +15,7 @@ contactForm.addEventListener("submit", async function (event) {
 
     try {
 
-        const response = await fetch("http://smart-travelguide-backend.up.railway.app/api/contact", {
+        const response = await fetch("https://smart-travelguide-backend.up.railway.app/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
