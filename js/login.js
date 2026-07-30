@@ -17,7 +17,7 @@ async function loginUser(event) {
     try {
 
         const response = await fetch(
-            "http://smart-travelguide-backend.up.railway.app/api/auth/login",
+            "https://smart-travelguide-backend.up.railway.app/api/auth/login",
             {
                 method: "POST",
 
