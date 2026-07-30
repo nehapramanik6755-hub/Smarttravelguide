@@ -29,6 +29,54 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+
+
+
+
+     const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuBtn && navLinks) {
+
+            menuBtn.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+        }
+
+
+        const searchBtn = document.getElementById("searchBtn");
+
+        if (searchBtn) {
+
+            searchBtn.addEventListener("click", () => {
+
+                const searchInput =
+                    document.getElementById("searchInput").value.trim();
+
+                if (!searchInput) {
+
+                    alert("Please enter a destination.");
+                    return;
+
+                }
+
+                window.location.href =
+                    "explore.html?search=" +
+                    encodeURIComponent(searchInput);
+
+            });
+
+        }
+
+
+        
+
+
+
+
+
     // 4. Hero button click (Explore Now button)
     const exploreBtn = document.querySelector(".explore-btn");
 
