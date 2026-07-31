@@ -13,10 +13,13 @@
     position:relative;
 }
 
-.place-hero img{
+.page-banner {
     width:100%;
     height:100%;
     object-fit:cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
     animation:zoomHero 15s ease-in-out infinite alternate;
 }
 
@@ -37,6 +40,8 @@
         transform:scale(1.12);
     }
 }
+
+
 
 /* ==========================
    DETAILS CARD

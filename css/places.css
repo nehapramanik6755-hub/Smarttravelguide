@@ -17,10 +17,10 @@
     background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
     url("../Images/banner.png");
-
+    background-repeat: repeat-y;
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
 
     overflow:hidden;
     animation:zoomBg 15s ease-in-out infinite alternate;

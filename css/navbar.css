@@ -155,55 +155,6 @@
 }
 
 
-/* ===========================
-   MOBILE MENU
-=========================== */
-
-/* .menu-toggle{
-    display:none;
-    font-size:28px;
-    color:#fff;
-    cursor:pointer;
-} */
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-/* @media(max-width:768px){
-
-    .navbar{
-        flex-wrap:wrap;
-        padding:15px 20px;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        margin-top:15px;
-        background:#0d6efd;
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-
-    .nav-links li{
-        width:100%;
-        text-align:center;
-    }
-
-    .nav-links li a{
-        display:block;
-        padding:15px;
-    }
-
-} */
 
 @media (max-width: 768px) {
 
@@ -251,6 +202,7 @@
 
         margin-top: 12px;
         padding: 10px 5px;
+       
     }
 
     .nav-links li {
